@@ -37,6 +37,7 @@ MQTTRouterPing::MQTTRouterPing(MQTTInterface *mi) {
  * @param mi = MQTT Interface
  */
 void MQTTRouterPing::init(MQTTInterface *mi) {
+	MQTTRouter::init(mi);
 	if (pingTopic == NULL){
 		pingTopic = (char *)pvPortMalloc(
 				MQTTTopicHelper::lenThingTopic(mi->getId(), PING)

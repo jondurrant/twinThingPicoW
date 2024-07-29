@@ -10,6 +10,7 @@
 #ifndef MQTTAGENT_H_
 #define MQTTAGENT_H_
 
+#include "core_mqtt_config.h"
 #include "MQTTConfig.h"
 #include "FreeRTOS.h"
 #include "core_mqtt.h"

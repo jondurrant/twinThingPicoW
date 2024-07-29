@@ -36,6 +36,15 @@ public:
 	  */
 	 virtual void route(const char *topic, size_t topicLen, const void * payload, size_t payloadLen, MQTTInterface *interface)=0;
 
+	 /***
+	  * Initialise the object give the  MQTT Interface
+	  * @param mi = MQTT Interface
+	  */
+	 void init( MQTTInterface *mi);
+
+protected:
+	 MQTTInterface *pInterface = NULL;
+
 
 };
 

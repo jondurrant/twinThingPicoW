@@ -10,6 +10,7 @@
 
 #include "MQTTConfig.h"
 #include "core_mqtt.h"
+#include "core_mqtt_config.h"
 
 extern "C" {
 #include <FreeRTOS.h>

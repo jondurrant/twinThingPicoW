@@ -17,3 +17,6 @@ MQTTRouter::~MQTTRouter() {
 }
 
 
+void MQTTRouter::init( MQTTInterface *mi){
+	pInterface = mi;
+}
